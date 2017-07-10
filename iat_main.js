@@ -313,7 +313,6 @@ function blockController(blockData)  {
 			endScreen(randStamp);
 			}
 		});
-
 	}
  }
 

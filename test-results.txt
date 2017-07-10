@@ -1,35 +1,35 @@
-,block1, , ,Cat,Dog,1,txt, Terrier, Target2,280.0799999999999
-,block1, , ,Cat,Dog,1,txt, Terrier, Target2,384.78499999999985
-,block1, , ,Cat,Dog,1,txt, Tabby, Target1,152.77000000000044
-,block1, , ,Cat,Dog,1,txt, Siamese, Target1,351.9500000000007
-,block1, , ,Cat,Dog,1,txt, Siamese, Target1,383.2950000000001
-,block2,Good,Bad, , ,1,txt, awful,  Bad,416.1049999999959
-,block2,Good,Bad, , ,1,txt, superb, Good,39.57500000000073
-,block2,Good,Bad, , ,1,txt, wonderful, Good,191.28499999999985
-,block2,Good,Bad, , ,1,txt, fantastic, Good,276.3150000000023
-,block2,Good,Bad, , ,1,txt, horrible,  Bad,152.07500000000073
-,block3,Good,Bad,Cat,Dog,1,txt, marvelous, Good,88.62999999999738
-,block3,Good,Bad,Cat,Dog,1,txt, Poodle,  Target2,111.86999999999898
-,block3,Good,Bad,Cat,Dog,1,txt, awful, Bad,296.6399999999994
-,block3,Good,Bad,Cat,Dog,1,txt, Calico,  Target1,80.00500000000102
-,block3,Good,Bad,Cat,Dog,1,txt, horrible,  Bad,111.57999999999811
-,block4,Good,Bad,Cat,Dog,1,txt, awful,  Bad,346.39500000000044
-,block4,Good,Bad,Cat,Dog,1,txt, Poodle,  Target2,314.31000000000495
-,block4,Good,Bad,Cat,Dog,1,txt, fantastic,  Good,217.375
-,block4,Good,Bad,Cat,Dog,1,txt, Siamese, Target1,320.15000000000146
-,block4,Good,Bad,Cat,Dog,1,txt, terrible,  Bad,112.77999999999884
-,block5, , ,Cat,Dog,0,txt, Tabby,  Target1,320.59000000000015
-,block5, , ,Cat,Dog,0,txt, Terrier, Target2,287.84999999999854
-,block5, , ,Cat,Dog,0,txt, Feline,  Target1,264.6399999999994
-,block5, , ,Cat,Dog,0,txt, Labrador, Target2,161.6949999999997
-,block5, , ,Cat,Dog,0,txt, Poodle,  Target2,286.4900000000016
-,block6,Good,Bad,Cat,Dog,0,txt, horrible,  Bad,334.52500000000146
-,block6,Good,Bad,Cat,Dog,0,txt, Calico,  Target1,167.7300000000032
-,block6,Good,Bad,Cat,Dog,0,txt, wonderful,  Good,268.36999999999534
-,block6,Good,Bad,Cat,Dog,0,txt, Calico,  Target1,384.7350000000006
-,block6,Good,Bad,Cat,Dog,0,txt, superb,  Good,183.95500000000175
-,block7,Good,Bad,Cat,Dog,0,txt, fantastic,  Good,96.00499999999738
-,block7,Good,Bad,Cat,Dog,0,txt, Siamese, Target1,190.99500000000262
-,block7,Good,Bad,Cat,Dog,0,txt, glorious,  Good,282.375
-,block7,Good,Bad,Cat,Dog,0,txt, Beagle,  Target2,167.66999999999825
-,block7,Good,Bad,Cat,Dog,0,txt, terrible,  Bad,152.6550000000061
+,block1, , ,Cat,Dog,0,txt, Labrador, Target2,447.44000000000005
+,block1, , ,Cat,Dog,0,txt, Siamese, Target1,217.4649999999997
+,block1, , ,Cat,Dog,0,txt, Siamese, Target1,520.0300000000002
+,block1, , ,Cat,Dog,0,txt, Labrador, Target2,369.71000000000095
+,block1, , ,Cat,Dog,0,txt, Calico, Target1,337.5599999999995
+,block2,Good,Bad, , ,0,txt, wonderful, Good,455.22499999999945
+,block2,Good,Bad, , ,0,txt, glorious, Good,552.2799999999997
+,block2,Good,Bad, , ,0,txt, unpleasant,  Bad,266.02500000000146
+,block2,Good,Bad, , ,0,txt, terrible,  Bad,415.9299999999985
+,block2,Good,Bad, , ,0,txt, horrible,  Bad,207.98500000000058
+,block3,Good,Bad,Cat,Dog,0,txt, superb, Good,520.1099999999988
+,block3,Good,Bad,Cat,Dog,0,txt, Beagle,  Target2,353.21500000000196
+,block3,Good,Bad,Cat,Dog,0,txt, horrible,  Bad,360.0599999999995
+,block3,Good,Bad,Cat,Dog,0,txt, Siamese, Target1,488.09999999999854
+,block3,Good,Bad,Cat,Dog,0,txt, dreadful, Bad,295.8899999999994
+,block4,Good,Bad,Cat,Dog,0,txt, wonderful,  Good,535.9350000000031
+,block4,Good,Bad,Cat,Dog,0,txt, Labrador, Target2,263.97000000000116
+,block4,Good,Bad,Cat,Dog,0,txt, horrible,  Bad,439.96500000000015
+,block4,Good,Bad,Cat,Dog,0,txt, Tabby,  Target1,344.36499999999796
+,block4,Good,Bad,Cat,Dog,0,txt, horrible,  Bad,328.34999999999854
+,block5, , ,Cat,Dog,1,txt, Labrador, Target2,432.3550000000032
+,block5, , ,Cat,Dog,1,txt, Calico,  Target1,448.0599999999977
+,block5, , ,Cat,Dog,1,txt, Calico,  Target1,239.61499999999796
+,block5, , ,Cat,Dog,1,txt, Labrador, Target2,358.96500000000015
+,block5, , ,Cat,Dog,1,txt, Labrador, Target2,367.79499999999825
+,block6,Good,Bad,Cat,Dog,1,txt, marvelous,  Good,599.9450000000033
+,block6,Good,Bad,Cat,Dog,1,txt, Terrier, Target2,535.3600000000006
+,block6,Good,Bad,Cat,Dog,1,txt, superb,  Good,680.0099999999984
+,block6,Good,Bad,Cat,Dog,1,txt, Beagle,  Target2,407.89500000000044
+,block6,Good,Bad,Cat,Dog,1,txt, horrible,  Bad,473.7099999999991
+,block7,Good,Bad,Cat,Dog,1,txt, wonderful,  Good,496.1849999999977
+,block7,Good,Bad,Cat,Dog,1,txt, Labrador, Target2,640.3449999999939
+,block7,Good,Bad,Cat,Dog,1,txt, horrible,  Bad,451.0599999999977
+,block7,Good,Bad,Cat,Dog,1,txt, Calico,  Target1,392.34500000000116
+,block7,Good,Bad,Cat,Dog,1,txt, unpleasant,  Bad,494.7649999999994
