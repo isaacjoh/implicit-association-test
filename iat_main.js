@@ -302,19 +302,27 @@ function blockController(blockData)  {
   //creates a random stamp and saves data to the output file
   else  {
 
-	randStamp = Math.floor(Math.random()*10000);
+		randStamp = Math.floor(Math.random()*10000);
 
-	$.ajax
-	({
-		type: "POST",
-		url: localServerPath + "/save",
-		data: {"id" : 1, "message" : experimentData, "stamp" : randStamp},
-		success: function (data) {
-			endScreen(randStamp);
-			}
+		$.ajax({
+			type: "POST",
+			url: localServerPath + "/save",
+			data: {"id" : 1, "message" : experimentData, "stamp" : randStamp},
+			success: callbackFn
 		});
+
+		function callbackFn(response) {
+			database.ref('/' + randomNumber).set({
+				dscore: response
+			});
+			console.log('set');
+			endScreen(randStamp);
+		}
+
 	}
  }
+
+
 
 
 //Load the configuration data and stimuli lists for the IAT from file
