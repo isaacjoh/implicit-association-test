@@ -302,7 +302,8 @@ function blockController(blockData)  {
   //creates a random stamp and saves data to the output file
   else  {
 
-		randStamp = Math.floor(Math.random()*10000);
+		let randStamp = Math.floor(Math.random()*10000);
+		let randomNumber = Math.floor(Math.random() * 1000000000);
 
 		$.ajax({
 			type: "POST",
@@ -312,6 +313,7 @@ function blockController(blockData)  {
 		});
 
 		function callbackFn(response) {
+			var database = firebase.database();
 			database.ref('/' + randomNumber).set({
 				dscore: response
 			});

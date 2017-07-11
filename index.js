@@ -14,17 +14,18 @@ app.get('/', (req, res) => {
 })
 
 app.post('/save', urlencodedParser, (req, res) => {
+  let filePath = __dirname + '/test-results.txt'
+
   let body = JSON.stringify(req.body['message[]']);
   body = ',' + body;
   body = body.replace(/\\n/g, '\n').replace(/\[/g, '').replace(/\]/g, '').replace(/"/g, '');
 
-  let randomNumber = Math.floor(Math.random() * 1000000000);
-
-  PythonShell.run('dscore_parser.py', function (err, results) {
-    let dscore = results[1].slice(1, -1);
-    res.end(dscore);
-  });
-
+  fs.writeFile(filePath, body, () => {
+    PythonShell.run('dscore_parser.py', function (err, results) {
+      let dscore = results[1].slice(1, -1);
+      res.end(dscore);
+    });
+  })
 })
 
 app.listen(3000, () => {
