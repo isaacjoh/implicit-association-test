@@ -25,7 +25,6 @@ app.get('/', (req, res) => {
 })
 
 app.post('/save', urlencodedParser, (req, res) => {
-  filePath = __dirname + '/test-results.txt'
   let body = JSON.stringify(req.body['message[]']);
   body = ',' + body;
   body = body.replace(/\\n/g, '\n').replace(/\[/g, '').replace(/\]/g, '').replace(/"/g, '');
@@ -34,15 +33,19 @@ app.post('/save', urlencodedParser, (req, res) => {
 
   let randomNumber = Math.floor(Math.random() * 1000000000);
 
-  fs.writeFile(filePath, body, () => {
-    PythonShell.run('dscore_parser.py', function (err, results) {
-      let dscore = results[1].slice(1, -1);
-      database.ref('/' + randomNumber).set({
-				dscore: dscore
-			});
+  console.log(randomNumber);
+
+  PythonShell.run('dscore_parser.py', function (err, results) {
+    let dscore = results[1].slice(1, -1);
+
+    console.log(dscore);
+
+    database.ref('/' + randomNumber).set({
+      dscore: dscore
     });
-    res.end();
-  })
+  });
+
+  res.end();
 
 })
 

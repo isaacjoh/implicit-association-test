@@ -2,7 +2,7 @@
   "name": "easy-iat",
   "version": "1.0.0",
   "description": "EasyIAT ======= Example IAT (from template):  http://witiko.co/testIAT/",
-  "main": "iat_main.js",
+  "main": "iat_main.js, index.js",
   "directories": {
     "doc": "doc"
   },
