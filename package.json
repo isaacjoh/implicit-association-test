@@ -7,7 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "nodejs --use_strict index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "firebase": "^4.1.3",
+    "now-logs": "0.0.7",
     "python-shell": "^0.4.0"
   }
 }

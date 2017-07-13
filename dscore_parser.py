@@ -16,7 +16,7 @@ for fn in os.listdir('.'):
 	identifier = filename[:filename.find('_')]
 
 	#only parse txt output files
-	if os.path.isfile(fn) and fn[-4:] == ".txt":
+	if os.path.isfile(fn) and fn == "test-results.txt":
 		rtArray = np.loadtxt(open(fn,"rb"),delimiter=",",usecols=(1,6,10), converters = {1:block2num}  )
 		firstIat = rtArray[ rtArray[:,0] <= 7 ,:]
 		secondIat = rtArray[ rtArray[:,0] > 7 ,:]

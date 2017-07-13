@@ -4,6 +4,7 @@ const fs = require('fs')
 const url = require('url')
 const app = express()
 const PythonShell = require('python-shell')
+const nowLogs = require('now-logs')('my-secret-key')
 
 app.use(express.static(__dirname));
 
@@ -22,12 +23,15 @@ app.post('/save', urlencodedParser, (req, res) => {
 
   fs.writeFile(filePath, body, () => {
     PythonShell.run('dscore_parser.py', function (err, results) {
+      if (err) {
+        console.log(err);
+      }
       let dscore = results[1].slice(1, -1);
       res.end(dscore);
     });
   })
 })
 
-app.listen(3000, () => {
+app.listen(80, () => {
   console.log('Example app listening on port 3000!')
 })

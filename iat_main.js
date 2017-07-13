@@ -309,7 +309,8 @@ function blockController(blockData)  {
 			type: "POST",
 			url: localServerPath + "/save",
 			data: {"id" : 1, "message" : experimentData, "stamp" : randStamp},
-			success: callbackFn
+			success: callbackFn,
+			error: errCallbackFn
 		});
 
 		function callbackFn(response) {
@@ -317,8 +318,12 @@ function blockController(blockData)  {
 			database.ref('/' + randomNumber).set({
 				dscore: response
 			});
-			console.log('set');
+			console.log('success');
 			endScreen(randStamp);
+		}
+
+		function errCallbackFn(error) {
+			console.log(error);
 		}
 
 	}
